@@ -1,0 +1,131 @@
+header{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  border: 1px solid rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo{
+  max-width: 115px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.headerList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.headerItem{
+  border-radius: 20px;
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 20px;
+  transition: .3s;
+}
+.headerItem:hover{
+  margin-top: -10px;
+}
+.btnGetApp{
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid rgb(127, 127, 127);
+  background-color: white;
+  cursor: pointer;
+  transition: .4s;
+}
+.btnGetApp:hover{
+  background-color: #323232;
+  color: white;
+}
+.btnMenu{
+  display: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+}
+.burgerMenu {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  animation: fadeIn 0.3s ease;
+}
+.burgerMenu {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 68px;
+  right: 10px;
+  opacity: 0; 
+  transform: translateX(10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+.burgerMenu.active {
+  opacity: 1;
+  transform: translateX(0);   
+}
+.burgerList{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+.burgerItems{
+  width: 100%;
+  list-style: none;
+  padding: 8px 20px;
+  background-color: white;
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+}
+.burgerItems:hover{
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .btnMenu{
+    display: block;
+  }
+  .headerList{
+    display: none;
+  }
+  .btnGetApp{
+    padding: 5px 15px;
+    border-radius: 15px;
+    }
+}
+.blackTheme{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  font-size: 14px;
+  background-color: black;
+  border-radius: 100%;
+  border: none;
+  color: white;
+}

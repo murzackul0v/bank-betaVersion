@@ -1,0 +1,42 @@
+.cashback{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cashbackBox{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.cashbackBox .textBox{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.cashbackBox .textBox h1{
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.cashbackBox .textBox p{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px){
+  .cashbackBox .textBox{
+    width: 100%;
+  }
+}

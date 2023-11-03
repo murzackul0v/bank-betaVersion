@@ -1,0 +1,64 @@
+.care{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.careBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.careBox .imgBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.careBox img {
+  width: 100%;
+  animation: float 5s ease-out infinite;
+}
+.careBox .textBox{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.careBox .textBox h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.careBox .textBox p{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.careBox .textBox p span{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px){
+  .careBox{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .careBox .imgBox{
+    width: 100%;
+  }
+  .careBox h1{
+    width: 100%;
+    text-align: center;
+  }
+  .careBox .textBox p{
+    text-align: center;;
+  }
+  .careBox .textBox{
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,53 @@
+.sponsor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  mask-type: 50px;
+}
+.sponsorBox{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 20px;
+}
+.sponsorBox div{
+  cursor: pointer;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsorBox div img{
+  animation: float 8s ease-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .sponsorBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+@media screen and (max-width: 400px){
+  .sponsorBox{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}

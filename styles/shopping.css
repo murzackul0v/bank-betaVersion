@@ -1,0 +1,50 @@
+.shopping{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingBox{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.shoppingBox .textBox{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.shoppingBox .imgBox img {
+  width: 100%;
+  animation: float 5s ease-out infinite;
+}
+.shoppingBox .textBox h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.shoppingBox .textBox p{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.shoppingBox .textBox p span{
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .shoppingBox{
+    flex-direction: column;
+  }
+  .shoppingBox .textBox{
+    text-align: center;
+  }
+  .shoppingBox .textBox h1{
+    width: 100%;
+    text-align: center;
+  }
+}

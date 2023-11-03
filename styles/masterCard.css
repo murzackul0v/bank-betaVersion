@@ -1,0 +1,71 @@
+.masterCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.masterCardBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.masterCardBox .textContent{
+  gap: 20px;
+}
+.masterCardBox .textContent h1{
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btns .pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btns .pay p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.btns .pay i{
+  font-size: 25px;
+}
+
+.btns .googlePay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btns .googlePay p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.btns .googlePay i{
+  font-size: 25px;
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .masterCardBox{
+    flex-direction: column-reverse;
+  }
+  .masterCardBox .textContent{
+    gap: 20px;
+    text-align: center;
+  }
+}

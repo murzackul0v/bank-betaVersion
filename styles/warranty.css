@@ -1,0 +1,60 @@
+.warrantyBoost{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.warrantyBoostBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.warrantyBoostBox .imgBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.warrantyBoostBox img {
+  width: 100%;
+  animation: float 5s ease-out infinite;
+}
+.warrantyBoostBox .textBox{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.warrantyBoostBox .textBox h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.warrantyBoostBox .textBox p{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.warrantyBoostBox .textBox p span{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px){
+  .warrantyBoostBox{
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .warrantyBoostBox .imgBox{
+    width: 100%;
+  }
+  .warrantyBoostBox h1{
+    width: 100%;
+    text-align: center;
+  }
+  .warrantyBoostBox .textBox{
+    width: 100%;
+    text-align: center;
+  }
+}

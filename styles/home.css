@@ -1,0 +1,137 @@
+.home{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.textContent{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.citat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.citat span{
+  font-size: 25px;
+}
+.citatText{
+  font-size: 16px;
+}
+.textContent h1{
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.homeDiscription{
+  font-size: 18px;
+  max-width: 400px;
+  width: 100%;
+}
+.appStore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.appleStore{
+  width: 200px;
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.appleStore .social{
+  font-size: 40px;
+}
+.appleStoreText{
+  font-weight: 200;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.appleStoreText span{
+  font-size: 20px;
+  font-weight: 600;
+}
+.playMarket{
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.playMarket .social{
+  font-size: 35px;
+}
+.playMarketText{
+  font-weight: 200;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.playMarketText span{
+  font-size: 20px;
+  font-weight: 600;
+}
+.imgContent img {
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .homeContent{
+    flex-direction: column;
+  }
+  .textContent{
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+  }
+  .textContent h1{
+    width: 100%;
+    text-align: center;
+  }
+  .appStore{
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 500px) {
+  .appStore{
+    width: 100%;
+    flex-direction: column;
+  }
+  .homeDiscription{
+    text-align: center;
+  }
+  .appleStore{
+    width: 100%;
+  }
+  .playMarket{
+    width: 100%;
+  }
+}
